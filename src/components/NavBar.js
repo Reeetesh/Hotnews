@@ -11,7 +11,7 @@ const NavBar = (props) => {
               className="fab fa-hotjar"
               style={{ color: "#FF6700", margin: "8px" }}
             ></i>
-            Hotnews
+            Hotnewz
           </Link>
           <button
             className="navbar-toggler"
