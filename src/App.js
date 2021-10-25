@@ -11,6 +11,7 @@ const App = () => {
   const apiKey = "b06cd3addf2040bf91166226bd5ca890";
   const [progress, setProgress] = useState(0);
   const [mode, setmode] = useState("light");
+
   const toggleMode = () => {
     if (mode === "light") {
       setmode("dark");

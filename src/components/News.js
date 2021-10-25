@@ -51,8 +51,15 @@ const News = (props) => {
   return (
     <>
       <h1
-        className="text-center"
-        style={{ margin: "35px 0px", marginTop: "90px" }}
+        className="text-center txt"
+        style={{
+          margin: "35px 0px",
+          marginTop: "90px",
+          color: props.mode === "dark" ? "white" : "black",
+          fontFamily: "'Kanit', sans-serif",
+          fontSize: "60px",
+        }}
+        // style={{ myStyle }}
       >
         Top {capitalizeFirstLetter(props.category)} Headlines
       </h1>
@@ -76,6 +83,7 @@ const News = (props) => {
                     author={element.author}
                     date={element.publishedAt}
                     source={element.source.name}
+                    mode={props.mode}
                   />
                 </div>
               );

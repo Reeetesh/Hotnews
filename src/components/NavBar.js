@@ -9,7 +9,7 @@ const NavBar = (props) => {
           <Link className="navbar-brand" to="/">
             <i
               className="fab fa-hotjar"
-              style={{ color: "orange", margin: "8px" }}
+              style={{ color: "#FF6700", margin: "8px" }}
             ></i>
             Hotnews
           </Link>
@@ -67,7 +67,7 @@ const NavBar = (props) => {
                 </Link>
               </li>
             </ul>
-            <div className="form-check form-switch">
+            <div className="form-check form-switch" style={{ color: "#fff" }}>
               <input
                 className="form-check-input"
                 type="checkbox"
@@ -75,7 +75,7 @@ const NavBar = (props) => {
                 onClick={props.toggleMode}
               />
               <label className="form-check-label" for="flexSwitchCheckDefault">
-                Dark Mode
+                {props.mode} Mode
               </label>
             </div>
           </div>
