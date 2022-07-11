@@ -11,6 +11,7 @@ This project was bootstrapped with Create React App.
 To deploy this project run
 
 ```bash
+  npm install
   npm start
 ```
 
